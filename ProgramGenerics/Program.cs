@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace ProgramGenerics
         {
             Console.WriteLine("Welcome To The Generics Program");
             Console.WriteLine("Choose The Option From Below");
-            Console.WriteLine("1:FindMaxValue\n2:");
+            Console.WriteLine("1:Find Max Int Value\n2:Find Max Float Value\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -25,6 +26,15 @@ namespace ProgramGenerics
                      int c = Convert.ToInt32(Console.ReadLine());
                      FindMaxintValue.MaxValue(a, b, c);
                      break;
+                case 2:
+                    //Console.WriteLine("Enter The First Number");
+                    //float x = Convert.ToInt32(Console.ReadLine());
+                    //Console.WriteLine("Enter The Second Number");
+                    //float y = Convert.ToInt32(Console.ReadLine());
+                    //Console.WriteLine("Enter The Third Number");
+                    //float z = Convert.ToInt32(Console.ReadLine());
+                    FindMaxFloatValue.MaxValue(12.3f,25.3f,4.6f);
+                    break;
             }
 
             Console.ReadLine();

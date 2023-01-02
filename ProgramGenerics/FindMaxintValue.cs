@@ -27,7 +27,7 @@ namespace ProgramGenerics
                 Console.WriteLine("Greater Value :" + c);
                 return c;
             }
-
-        }
+        } 
+        
     }
 }
