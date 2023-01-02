@@ -11,6 +11,10 @@ namespace ProgramGenerics
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To The Generics Program");
+
+            FindMaxintValue.MaxValue(10,20,30);
+
+
             Console.ReadLine();
         }
     }
