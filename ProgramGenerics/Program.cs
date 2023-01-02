@@ -13,7 +13,7 @@ namespace ProgramGenerics
         {
             Console.WriteLine("Welcome To The Generics Program");
             Console.WriteLine("Choose The Option From Below");
-            Console.WriteLine("1:Find Max Int Value\n2:Find Max Float Value\n");
+            Console.WriteLine("1:Find Max Int Value\n2:Find Max Float Value\n3:Find Max String\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +34,9 @@ namespace ProgramGenerics
                     //Console.WriteLine("Enter The Third Number");
                     //float z = Convert.ToInt32(Console.ReadLine());
                     FindMaxFloatValue.MaxValue(12.3f,25.3f,4.6f);
+                    break;
+                case 3:
+                    FindMaxString.Maxstring("Jayesh", "Pallavi", "Priyansh");
                     break;
             }
 
