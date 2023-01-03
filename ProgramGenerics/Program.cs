@@ -13,7 +13,7 @@ namespace ProgramGenerics
         {
             Console.WriteLine("Welcome To The Generics Program");
             Console.WriteLine("Choose The Option From Below");
-            Console.WriteLine("1:Find Max Int Value\n2:Find Max Float Value\n3:Find Max String\n");
+            Console.WriteLine("1:Find Max Int Value\n2:Find Max Float Value\n3:Find Max String\n4:Generic Refactor1");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -38,6 +38,12 @@ namespace ProgramGenerics
                 case 3:
                     FindMaxString.Maxstring("Jayesh", "Pallavi", "Priyansh");
                     break;
+                case 4:
+                    GenericRefactor1<int>.FindMax(100, 600, 400);
+                    GenericRefactor1<float>.FindMax(12.3f, 20.5f, 40.2f);
+                    GenericRefactor1<string>.FindMax("Pallavi","Jayesh","Priyansh");
+                    break;
+
             }
 
             Console.ReadLine();
